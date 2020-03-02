@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/material_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/imBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/TextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/imBack"
+            android:gravity="center_vertical"
+            android:text="@string/create_account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_18" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/material_white"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="32dp"
+            android:paddingTop="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="32dp">
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/EdtitextInput"
+                android:drawableLeft="@drawable/ic_user"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:maxLength="60"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/EdtitextInput"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLength="60"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/EdtitextInput"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                style="@style/EdtitextInput"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:padding="14dp" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                style="@style/ButtonPurple"
+                android:layout_marginTop="32dp"
+                android:text="@string/register" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

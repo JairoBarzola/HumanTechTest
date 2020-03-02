@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HumanTechTest App</string>
+    <string name="sign_in">Iniciar Sesión</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Email</string>
+    <string name="register_user">¿No tienes una cuenta?\nRegístrate</string>
+    <string name="signing_in">Iniciando sesión...</string>
+    <string name="accept">Aceptar</string>
+    <string name="failure_retrofit">Ocurrio un error, por favor intente más tarde.</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="register">Registrar</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="creating_account">Creando cuenta...</string>
+    <string name="name">Nombre</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="logging_out">Cerrando sesión...</string>
+</resources>

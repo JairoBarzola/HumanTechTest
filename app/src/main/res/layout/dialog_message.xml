@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtMessage"
+        style="@style/TextRegular"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/txtMensaje"
+        android:text="@string/accept"
+        style="@style/ButtonPurple"/>
+
+
+</LinearLayout>
